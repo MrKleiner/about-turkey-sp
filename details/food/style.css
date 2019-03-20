@@ -1,0 +1,378 @@
+@import url("../../fonts-import.css");
+
+html
+{
+	scroll-behavior: smooth;
+	height: 1000vh;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+main
+{
+	background: url(../../pics/noise/noise-food-bg-v2.png);
+	width: 100%;
+	height: 1430vh;
+    margin: 0;
+}
+
+/* 17191c */
+
+.food-head
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20vh;
+	background: rgba(0,0,0,0.2);
+}
+
+.lang-menu
+{
+	height: 20vh;
+	width: 5vw;
+	position: relative;
+	float: left;
+	display: block;
+}
+
+.food-head-header
+{
+	width: 50vw;
+	height: 20vh;
+	margin: 0 auto;
+
+}
+
+.food-head-header h1
+{
+	text-align: center;
+	font-size: 15vh;
+	font-family: "Ubuntu";
+	color: #fff;
+	text-shadow: 0px 0px 11px rgba(0,0,0,0.85);
+}
+
+.home-button
+{
+	bottom: 100%;
+	float: right;
+	position: relative;
+	width: 6.5vw;
+	height: 20vh;
+	display: inline-block;
+}
+
+.home-button img
+{
+	position: relative;
+	height: 6vh;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.home-button ul
+{
+	top: 1vh;
+	position: relative;
+	height: 13vh;
+	width: 100%;
+}
+
+.home-button ul li
+{
+	position: relative;
+	width: 100%;
+	padding: 1vh 0px;
+}
+
+.home-button ul li a
+{
+	text-align: center;
+	position: relative;
+	color: #fff;
+	font-size: 1.6vh;
+	font-family: "Ubuntu";
+	text-align: center;
+	padding: 1vh 0px;
+}
+
+
+
+.home-button ul li::before
+{
+	position: absolute;
+	content: "";
+	background: #3366CC;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	transition: transform 0.4s;
+	transform-origin: right;
+	transform: scaleX(0);
+	filter: brightness(90%);
+}
+
+.home-button ul li:hover::before
+{
+	transition: transform 0.4s;
+	transform-origin: right;
+	transform: scaleX(1);
+}
+
+
+
+/*LANG*/
+
+
+.lang-dropdown-container
+{
+	position: absolute;
+	height: 20vh;
+	width: 5vw;
+	top: 0px;
+	z-index: 1;
+
+}
+
+.lang-dropdown-container ul
+{
+	position: absolute;
+	width: 4vw;
+	height: 14vh;
+	top: 6vh;
+
+}
+
+
+.lang-dropdown-container ul li a img
+{
+	z-index: 3;
+	position: relative;
+	height: 6vh;
+	transition: 0.3s;
+	transform: scale(0);
+}
+
+#lang-active-hitbox img
+{
+	z-index: 3;
+	position: relative;
+	height: 6vh;
+}
+
+.lang-menu:hover .lang-dropdown-container ul li a img
+{
+	transition: 0.3s;
+	transform: scale(1);
+}
+
+
+
+.wrapper-all
+{
+	width: 100%;
+	height: 1310vh;
+	position: relative;
+	/*background: rgba(30,0,20,0.2);*/
+}
+
+
+
+
+/*
+========================
+======FOOD BLOCKS=======
+========================
+*/
+
+
+
+
+.food1
+{
+	width: 77vw;
+	height: 113vh;
+	position: relative;
+	/*background: rgba(30,0,20,0.5);*/
+}
+
+.food2
+{
+	width: 77vw;
+	height: 107vh;
+	position: relative;
+}
+
+.food3
+{
+	width: 77vw;
+	height: 110vh;
+	position: relative;
+}
+
+.food4
+{
+	display: block;
+	width: 77vw;
+	height: 110vh;
+	position: relative;
+}
+
+.food5
+{
+	display: block;
+	height: 115vh;
+	width: 77vw;
+	position: relative;
+}
+
+.food6
+{
+	width: 77vw;
+	height: 110vh;
+	position: relative;
+}
+
+.food7
+{
+	width: 77vw;
+	height: 115vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.food8
+{
+	width: 77vw;
+	height: 124vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.food9
+{
+	width: 77vw;
+	height: 124vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.food10
+{
+	bottom: 20vh;
+	width: 77vw;
+	height: 124vh;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+.food1, .food2, .food3, .food4, .food5, .food7, .food8, .food9
+{
+	margin: 25vh auto;
+}
+
+.food6
+{
+	margin: 25vh auto;
+	margin-top: 40vh;
+}
+
+.food1-img, .food2-img, .food3-img, .food4-img, .food5-img, .food6-img, .food7-img, .food9-img, .food10-img 
+{
+	position: relative;
+	width: 100%;
+	height: 88vh;
+	/*background: rgba(30,30,20,0.5);*/
+}
+
+.food5-img, .food7-img
+{
+	height: 93vh;
+}
+
+.food8-img
+{
+	height: 97vh;
+}
+
+.food1-img img, .food2-img img, .food3-img img, .food4-img img, .food5-img img, .food6-img img, .food7-img img, .food8-img img, .food9-img img, .food10-img img
+{
+	border-radius: 5vh 5vh 0vh 0vh;
+	width: 100%;
+	height: 100%;
+	filter: brightness(80%);
+	z-index: -1;
+
+}
+
+.food1-text, .food2-text, .food3-text, .food4-text, .food5-text, .food6-text, .food7-text, .food8-text, .food9-text, .food10-text
+{
+	width: 100%;
+	height: 25vh;
+	position: relative;
+	/*background: rgba(0,0,0,0.2);*/
+}
+
+.food5-text, .food7-text
+{
+	height: 30vh;
+}
+
+.food8-text
+{
+	height: 34vh;
+}
+
+.food1-text p, .food2-text p, .food3-text p, .food4-text p, .food5-text p, .food6-text p, .food7-text p, .food8-text p, .food9-text p, .food10-text p
+{
+	padding: 1vh 0.5vw;
+	font-size: 4vh;
+	font-family: "Ubuntu";
+	text-align: center;
+	color: #fff;
+	background: rgba(0,0,0,0.3);
+}
+
+.food1-img h1, .food2-img h1, .food3-img h1, .food4-img h1, .food5-img h1, .food6-img h1, .food7-img h1, .food8-img h1, .food9-img h1, .food10-img h1
+{
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	font-family: "Ubuntu";
+	font-size: 15vh;
+	left: 50%;
+    transform: translate(-50%, 0);
+    text-shadow: 1.888px 2.331px 0px rgba(13, 13, 13, 0.71);
+    z-index: 4;
+}
+
+
+.food-to-top-button
+{	
+	vertical-align: bottom;
+	right: 45vw;
+	bottom: 20vh;
+	height: 9vh;
+	width: 4.5vw;
+	position: relative;
+	float: right;
+	
+}
+
+.food-to-top-button img
+{
+	height: 9vh; 
+	transform: rotate(90deg);
+}

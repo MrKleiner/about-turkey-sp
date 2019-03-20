@@ -1,0 +1,766 @@
+@import url("../../fonts-import.css");
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+header
+{
+    width: 100%;
+    display: block;
+    margin: 0;
+
+}
+
+
+
+/*
+==============================================
+========= Tourism dark theme =================
+==============================================
+*/
+
+
+
+
+.-dark-tourism-nav
+{
+	position: absolute;
+	width: 90%;
+	height: 7vh;
+	background: #17191c;
+	margin: 0px 4vw;
+	padding: auto;
+	border-radius: 0vh 0vh 1vh 1vh;
+	/*
+-webkit-box-shadow: 0px 0px 14px 0px rgba(0,221,255,0.12);
+-moz-box-shadow: 0px 0px 14px 0px rgba(0,221,255,0.12);
+box-shadow: 0px 0px 14px 0px rgba(0,221,255,0.12);
+*/
+-webkit-box-shadow: 0px 0px 20px 0px rgba(0,221,255,0.12);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,221,255,0.12);
+box-shadow: 0px 0px 20px 0px rgba(0,221,255,0.12);
+}
+
+
+.nav-other-container
+{
+	position: relative;
+	float: right;
+	width: 37vw;
+	height: 7vh;
+}
+
+.nav-other-container ul
+{
+	width: 37vw;
+	height: 7vh;
+	display: flex;
+	justify-content: flex-end;
+	background: rgba(190, 30, 40, 0);
+}
+
+.nav-other-container ul li
+{
+	padding: 10px 10px;
+	position: relative;
+	width: 14vw;
+	height: 7vh;
+	box-sizing: border-box;
+	border-right: 1px solid rgba(255,255,255,0.25);
+	vertical-align: bottom;
+	transition: 0.2s;
+
+}
+
+.nav-other-container ul li a
+{
+	font-size: 5vh;
+	font-family: "Roboto", sans-serif;;
+	position: relative;
+	color: #fff;
+	vertical-align: bottom;
+}
+
+
+
+#tourism-goverment a
+{
+	left: 0px;
+	font-size: 4vh;
+	font-family: "Roboto", sans-serif;;
+	position: relative;
+	color: #fff;
+	padding: 1vh 1vw;
+}
+
+
+#tourism-capital a
+{
+	left: 0px;
+	font-size: 4vh;
+	font-family: "Roboto", sans-serif;;
+	position: relative;
+	color: #fff;
+	padding: 1vh 3vw;
+}
+
+#tourism-food a
+{
+	left: 0px;
+	font-size: 4vh;
+	font-family: "Roboto", sans-serif;;
+	position: relative;
+	color: #fff;
+	padding: 1vh 3vw;
+
+}
+
+
+#tourism-food
+{
+	border-right: 1px solid rgba(255,255,255, 0);
+	border-radius: 0vh 0vh 1vh 0vh;
+	background: rgba(255,255,255,0);
+}
+
+#tourism-food:hover
+{
+	background: #0066CC;
+	transition: 0.2s;
+}
+
+.nav-other-container ul li:hover
+{
+	background: /*#3366FF*/ #0066CC;
+	transition: 0.2s;
+}
+
+
+
+.-dark-tourism-dark-switch-container
+{
+	position: relative;
+	float: left;
+	width: 11vw;
+	height: 7vh;
+	margin-left: 10vw;
+	z-index: 16;
+}
+
+.-dark-tourism-dark-img-container
+{
+	position: relative;
+	float: left;
+	width: 10vw;
+	height: 6.8vh;
+	background: #17191c;
+	border-radius: 5vh;
+	z-index: 11;
+	right: 0px;
+	transition: 0.4s;
+}
+
+.-dark-toy a
+{
+	left: 0.5vw;
+	top: 2vh;
+	font-family: "Roboto", sans-serif;;
+	font-size: 2.3vh;
+	position: absolute;
+	z-index: -1;
+	transition: 0.3s;
+	background: #000;
+	padding: 0vh 1vw;
+	color: #fff;
+	border-radius: 0vh 1vh 1vh 1vh;
+
+}
+
+/*
+.tourism-dark-img-container:hover ~ .toy a
+{
+	left: 9.5vw;
+	top: 2vh;
+	font-family: "Roboto", sans-serif;;
+	font-size: 2.3vh;
+	position: absolute;
+	z-index: 10;
+	transition: 0.3s;
+	padding: 0vh 1vw;
+	color: #fff;
+	border-radius: 0vh 1vh 1vh 1vh;
+}
+
+*/
+.-dark-tourism-dark-switch-container:hover .-dark-tourism-dark-img-container
+{
+	right: 9vw;
+	transition: 0.4s;
+}
+
+.-dark-tourism-dark-switch-container img
+{
+	border: 0.2vh solid #f6f6f6;
+	border-radius: 5vh;
+	margin-left: 6.6vw;
+	height: 4.8vh;
+	position: relative;
+	padding: 0.5vh;
+	margin-top: 0.4vh;
+	transform: rotate(0deg);
+	transition: 0.5s;
+	color: #fff;
+}
+
+.-dark-tourism-dark-switch-container:hover .-dark-tourism-dark-img-container a img
+{
+	transform: rotate(-360deg);
+	transition: 0.5s;
+}
+
+#-dark-tourism-home-button
+{
+	position: relative;
+	height: 5vh; 
+	padding: 50px 50px;
+	background: rgba(0,0,0,0.0);
+	padding: 1vh;
+	left: 5vw;
+	transition: 0.2s;
+}
+
+#-dark-tourism-home-button img
+{
+	position: relative;
+	height: 5vh;
+	padding: 1vh;
+	background: rgba(0,0,0,0.0);
+	transition: 0.2s;
+}
+
+#-dark-tourism-home-button:hover img
+{
+	position: relative;
+	height: 5vh; 
+	background: #3366FF;
+	padding: 1vh;
+	transition: 0.2s;
+}
+
+
+
+.-dark-tourism-lang-menu
+{
+	position: relative;
+	width: 17vw;
+	height: 7vh;
+	float: left;
+	left: 3vw;
+	background: rgba(110, 110, 110, 0);
+}
+
+.-dark-tourism-lang-active-img
+{
+	position: relative;
+	height: 6vh;
+	width: auto;
+	padding: 0.5vh;
+	border-radius: 100%;
+	z-index: 15;
+}
+
+#-dark-tourism-nightmode-hitbox
+{
+	position: absolute;
+	padding: 3.4vh 5vw;
+}
+
+.-dark-tourism-lang-dropdown-container
+{
+	right: 4.9vw;
+	float: right;
+	display: table;
+	margin: 0 auto;
+	height: 6.9vh;
+	width: 12vw;
+	position: relative;
+	z-index: 11;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 1.5vh;
+}
+
+.-dark-tourism-lang-menu:hover ~ .-dark-tourism-lang-dropdown-container
+{
+	background: rgba(0, 0, 0, 1);
+}
+
+.-dark-tourism-lang-dropdown-container ul
+{
+	left: 3.5vw;
+	position: relative;
+}
+
+.-dark-tourism-lang-dropdown-container ul li
+{
+	vertical-align: top;
+	position: relative;
+	height: 6vh;
+	display: inline;
+	padding: 5.2vh 0.6vw;
+}
+
+.-dark-tourism-lang-dropdown-container ul li a img
+{
+	height: 6vh;
+	position: relative;
+	transform: scale(0);
+	transition: 0.3s;
+}
+
+#-dark-tourism-lang-active-hitbox:hover ~ .-dark-tourism-lang-dropdown-container ul li a img, .-dark-tourism-lang-dropdown-container:hover ul li a img
+{
+	height: 6vh;
+	position: relative;
+	margin-top: 0.5vh;
+	transform: scale(1);
+	transition: 0.3s;
+}
+
+
+
+
+
+
+.-dark-wrapper-all
+{
+	background: /*#f6f6f6*/ #16161a;
+	width: 100%;
+	height: 660vh;
+	position: absolute;
+	z-index: 3;
+}
+
+.-dark-content-wrapper
+{
+	top: 20vh;
+	margin: 0px 10vw;
+	background: /*#f6f6f6*/ url(../../pics/noise/noise-tourism-wrapper-lighter.png);
+	position: absolute;
+	width: 80%;
+	height: 619vh;
+	z-index: 5;
+	-webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	border-radius: 0.2vh;
+}
+
+
+
+
+
+
+.-dark-tourism-head-img img
+{
+	top: 0vh;
+	display: block;
+	position: relative;
+	height: 84vh;
+	align-self: center;
+	padding: auto;
+	margin: auto;
+}
+
+.-dark-tourism-head-img
+{	
+	top: 8vh;
+	position: relative;
+	height: 84vh;
+}
+
+.-dark-head-to-att1-stick
+{
+	display: block;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #FFCC00;
+	top: 11vh;
+	margin: auto;
+	padding: auto;
+
+}
+
+.-dark-head-block
+{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#-dark-tourism-turkey
+{
+	left: 20vw;
+	width: 40vw;
+	min-width: 40vw;
+	box-sizing: border-box;
+	border-radius: 5vh;
+	top: 3vh;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	font-family: "Roboto", sans-serif;;
+	font-size: 8vh;
+	z-index: 5;
+	border: 0.5vh solid #FFCC00;
+}
+
+
+
+/*
+=============================
+=======ARTICLES START========
+=============================
+*/
+
+
+
+.-dark-att1, .-dark-att2, .-dark-att3, .-dark-att5, .-dark-att6
+{
+	left: 2vw;
+	position: relative;
+	top: 9vh;
+	height: 83vh;
+	width: 95%;
+/*	background: rgb(235,235,235); */ 
+	border-radius: 1vh;
+}
+
+.-dark-att4
+{
+	left: 2vw;
+	position: relative;
+	top: 9vh;
+	height: 88vh;
+	width: 95%;
+/*	background: rgb(235,235,235); */ 
+	border-radius: 1vh;
+}
+
+.-dark-att1 h1
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 59vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;
+}
+
+.-dark-att2 h1 
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 61vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;	
+}
+
+.-dark-att3 h1 
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 56.4vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;
+	background: rgb(0,0,0,0.1);
+	border-radius: 1vh;
+	transition: 0.2s;
+	padding-left: 0.5vw;
+}
+
+.-dark-att4 h1 
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 53vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;	
+}
+
+.-dark-att5 h1 
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 58vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;	
+}
+
+.-dark-att6 h1 
+{
+	color: #f6f6f6;
+	position: relative;
+	left: 3vw;
+	top: 2vh;
+ 	margin-right: 48vw;
+	font-family: "Roboto", sans-serif;;
+	font-size: 5vh;	
+}
+
+
+.-dark-att1 img, .-dark-att2 img, .-dark-att3 img, .-dark-att4 img, .-dark-att5 img, .-dark-att6 img
+{
+	position: relative;
+	top: 4vh;
+	left: 1vw;
+	height: 48vh;
+	-webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+	border-radius: 1vh;
+}
+
+.-dark-att1-text-block, .-dark-att2-text-block, .-dark-att3-text-block, .-dark-att4-text-block, .-dark-att5-text-block, .-dark-att6-text-block
+{
+	right: 0vw;
+	top: 4.5vh;
+	position: relative;
+	display: block;
+	float: right;
+	width: 32vw;
+	height: 58vh;
+	border-radius: 1vh;
+
+}
+
+.-dark-att1-text-block p, .-dark-att2-text-block p, .-dark-att3-text-block p, .-dark-att4-text-block p, .-dark-att5-text-block p, .-dark-att6-text-block p
+{
+
+	color: /*rgb(40,40,40)*/ #f6f6f6;
+	font-family: "Roboto", sans-serif;;
+	font-size: 3.2vh;
+	position: relative;
+	/*left: 1.2vw;*/ 
+	width: 30vw;
+		background: rgba(0,0,0,0.1);
+		padding: 0.6vw;
+		border-radius: 1vh;
+
+}
+
+
+.-dark-att4-text-block
+{
+	right: 1.5vw;
+	top: 4.5vh;
+	position: relative;
+	display: block;
+	float: right;
+	width: 32vw;
+	height: 59vh;
+	border-radius: 1vh;
+
+}
+
+.-dark-att4-text-block p
+{
+
+	color: /*rgb(40,40,40)*/ #f6f6f6;
+	font-family: "Roboto", sans-serif;;
+	font-size: 3.2vh;
+	position: relative;
+	left: 1.2vw; 
+	width: 30vw;
+			background: rgba(0,0,0,0.1);
+		padding: 0.6vw;
+
+}
+
+
+
+
+
+/*
+=============================
+=======ARTICLES START========
+=============================
+*/
+
+
+
+
+
+/*
+=====================================
+===DECORATION STICKS --START--=======
+=====================================
+*/
+
+
+.-dark-aya-to-ephesus-stick
+{
+	top: 23vh;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #6699CC;
+	border-radius: 0.5vh;
+}
+
+.-dark-ephesus-to-cappadocia-stick
+{
+	top: 19vh;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #6699CC;
+	border-radius: 0.5vh;
+}
+.-dark-cappadocia-to-topkapi-stick
+{
+	top: 23vh;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #6699CC;
+	border-radius: 0.5vh;
+}
+
+.-dark-topkapi-to-pamukkale-stick
+{
+	top: 29vh;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #6699CC;
+	border-radius: 0.5vh;
+}
+
+.-dark-pamukkale-to-sumela-stick
+{
+	top: 19vh;
+	margin: auto;
+	padding: auto;
+	position: relative;
+	width: 25vw;
+	height: 0.5vh;
+	background: #6699CC;
+	border-radius: 0.5vh;
+}
+
+
+
+/*
+=====================================
+===DECORATION STICKS --END--=========
+=====================================
+*/
+
+
+
+
+
+.-dark-att1-text-block a, .-dark-att2-text-block a, .-dark-att3-text-block a, .-dark-att4-text-block a, .-dark-att5-text-block a, .-dark-att6-text-block a
+{
+	color: #FFCC00;
+}
+
+
+.-dark-att1 h1::before, .-dark-att2 h1::before, .-dark-att3 h1::before, .-dark-att4 h1::before, .-dark-att5 h1::before, .-dark-att6 h1::before
+{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	min-width: 100%;
+	max-width: 100%;
+	height: 105%;
+	left: 0px;
+	bottom: -0.55vh;
+	background: #FF9900;
+	transition: transform 0.4s;
+	transform-origin: bottom;
+	transform: scaleY(0.1);
+}
+
+.-dark-att1 h1:hover::before, .-dark-att2 h1:hover::before, .-dark-att3 h1:hover::before, .-dark-att4 h1:hover::before, .-dark-att5 h1:hover::before, .-dark-att6 h1:hover::before
+{
+	z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 105%;
+	left: 0px;
+	bottom: -0.55vh;
+	background: #FF9900;
+	transition: transform 0.4s;
+	transform-origin: bottom;
+	transform: scaleY(1);
+}
+
+
+
+.-dark-att1 h1:hover, .-dark-att2 h1:hover, .-dark-att3 h1:hover, .-dark-att4 h1:hover, .-dark-att5 h1:hover, .-dark-att6 h1:hover
+{
+background: rgb(0,0,0,0.0);
+transition: 0.2s;
+}
+
+
+
+.-dark-tourism-to-top-button
+{	
+	vertical-align: bottom;
+	right: 45vw;
+	top: 642vh;
+	height: 9vh;
+	width: 4.5vw;
+	position: relative;
+	float: right;
+	
+}
+
+.-dark-tourism-to-top-button img
+{
+	height: 9vh; 
+	transform: rotate(90deg);
+}
+
+
+#tourism-goverment-ru a
+{
+	left: 0px;
+	font-size: 3.3vh;
+	font-family: "Roboto", sans-serif;;
+	position: relative;
+	color: #fff;
+	padding: 0vh 0vw;
+	top: 0.5vh;
+}
